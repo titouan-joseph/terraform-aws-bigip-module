@@ -11,9 +11,9 @@ resource "random_id" "module_id" {
 resource "random_string" "dynamic_password" {
   //count = var.f5_password == null ? 1 : 0
   length      = 16
-  min_upper   = 1
-  min_lower   = 1
-  min_numeric = 1
+  min_upper   = 2
+  min_lower   = 2
+  min_numeric = 3
   special     = false
 }
 
